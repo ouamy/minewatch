@@ -1,0 +1,79 @@
+:root {
+  --bg: #0e0e0e;
+  --accent: #00ffcc;
+  --text: #f5f5f5;
+  --button-bg: #1a1a1a;
+  --button-hover: #00ffcc;
+  --button-text: #ffffff;
+  --status-bg: #101010;
+  --font: 'Orbitron', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  padding: 20px;
+}
+
+.container {
+  max-width: 400px;
+  width: 100%;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  color: var(--accent);
+  text-shadow: 0 0 10px var(--accent);
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
+button {
+  flex: 1 1 45%;
+  padding: 1rem;
+  font-size: 1.25rem;
+  font-family: var(--font);
+  background: var(--button-bg);
+  color: var(--button-text);
+  border: 2px solid var(--accent);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, transform 0.1s;
+}
+
+button:hover {
+  background: var(--button-hover);
+  color: #000;
+  transform: scale(1.05);
+}
+
+.status-box {
+  background: var(--status-bg);
+  border: 2px solid var(--accent);
+  border-radius: 8px;
+  padding: 1rem;
+  font-family: monospace;
+  font-size: 0.95rem;
+  text-align: left;
+  white-space: pre-wrap;
+  color: var(--text);
+}
